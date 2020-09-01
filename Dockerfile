@@ -8,4 +8,4 @@ FROM java:8
 ADD target/spring-boot-test-1.0-SNAPSHOT.jar /spring-boot-test.jar
 
 # 指定docker容器启动时运行jar包
-ENTRYPOINT ["java", "-jar", "spring-boot-test.jar"]
+ENTRYPOINT ["java", "-jar", "/spring-boot-test.jar"]
